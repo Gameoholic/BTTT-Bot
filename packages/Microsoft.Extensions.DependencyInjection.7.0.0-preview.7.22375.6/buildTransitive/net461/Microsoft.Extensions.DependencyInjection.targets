@@ -1,0 +1,6 @@
+<Project InitialTargets="NETStandardCompatError_Microsoft_Extensions_DependencyInjection_net462">
+  <Target Name="NETStandardCompatError_Microsoft_Extensions_DependencyInjection_net462"
+          Condition="'$(SuppressTfmSupportBuildWarnings)' == ''">
+    <Error Text="Microsoft.Extensions.DependencyInjection doesn't support $(TargetFramework). Consider updating your TargetFramework to net462 or later." />
+  </Target>
+</Project>
